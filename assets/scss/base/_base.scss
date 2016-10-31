@@ -1,0 +1,19 @@
+/*
+File  : _base.scss
+Date  : 12 Sep 16
+Author: Jayames Young
+*/
+
+h1 {
+  margin: 10px 0 20px 0;
+  font-size: 1.5em;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.error, .warning {
+  color: red;
+  font-weight: bold;
+}

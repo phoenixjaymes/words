@@ -1,0 +1,19 @@
+/*
+File  : _config.scss
+Date  : 12 Sep 16
+Author: Jayames Young
+*/
+
+
+// Bootstrap break points
+// Small devices (landscape phones, 544px and up)
+$brk-sm: '(min-width: 544px)';
+
+// Medium devices (tablets, 768px and up)
+$brk-md: '(min-width: 768px)';
+
+// Large devices (desktops, 992px and up)
+$brk-lg: '(min-width: 992px)';
+
+// Extra large devices (large desktops, 1200px and up)
+$brk-xl: '(min-width: 1200px)';

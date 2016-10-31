@@ -1,0 +1,23 @@
+/*
+File  : _main-header.scss
+Date  : 12 Sep 16
+Author: Jayames Young
+*/
+
+
+.main-header {
+  
+  
+  &__name {
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+    text-align: center;
+    
+    @media #{$brk-md} {
+      margin-top: 75px;
+      font-size: 2.2em;
+    }
+  }
+}

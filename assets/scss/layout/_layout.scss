@@ -1,0 +1,56 @@
+/*
+File  : layout.scss
+Date  : 9 Sep 16
+Author: Jayames Young
+*/
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  
+  background: url('../img/bg-words-1366x250.gif') center / auto 100% repeat-x #000;
+  height: 140px;
+  width: 100%;
+  
+  @media #{$brk-md} {
+    background: url('../img/bg-words-1366x250.gif') center repeat-x #000;
+    height: 250px;
+  }
+}
+
+.main-content {
+  background: #fff;
+  flex: 1;
+  padding-top: 160px;   // Height of main-header plus 20px;
+  
+  @media #{$brk-md} {
+    padding-top: 270px;   // Height of main-header plus 20px;
+  }
+}
+
+.main-content__wrap {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  max-width: 576px;
+  
+  @media #{$brk-md} {
+    max-width: 700px;
+  }
+  
+}
+
+.main-footer {
+  background: #000;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}

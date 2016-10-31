@@ -1,0 +1,16 @@
+
+<form class="main-form">
+  <input id="txtQty" class="main-form__qty" type="text" ng-model="wordQty" ng-init="wordQty=5" value="5">
+  <label for="txtQty"> * {{ msgQty }}</label><br>
+
+  <input id="radWords" type="radio" ng-model="outputType" value="words" ng-checked="true" ng-init="outputType='words'" ng-change="msgQty = wordLimit">
+  <label class="main-form__label" for="radWords">Words</label>
+  
+  <input id="radParagraphs" type="radio" ng-model="outputType" value="sentences" ng-change="msgQty = sentenceLimit">
+  <label class="main-form__label" for="radParagraphs">Sentences</label>
+  
+  <input id="radSentences" type="radio" ng-model="outputType" value="paragraphs" ng-change="msgQty = paragraphLimit">
+  <label class="main-form__label" for="radSentences">Paragraphs</label>
+
+  <button class="main-form__btn" ng-click="$emit('outputWords', {'qty' : wordQty, 'type': outputType})">Generate Words</button>
+</form>

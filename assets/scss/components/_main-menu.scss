@@ -1,0 +1,31 @@
+/*
+File  : _main-menu.scss
+Date  : 12 Sep 16
+Author: Jayames Young
+*/
+
+.main-menu {
+  list-style: none;
+  text-align: center;
+  
+  &__item {
+    color: #ff0;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 1px;
+    padding: 7px;
+    
+
+
+    &:hover {
+      color: #fff;
+      cursor: pointer;
+    }
+    
+    @media #{$brk-md} {
+      font-size: 1.2em;
+    }
+    
+  }
+}

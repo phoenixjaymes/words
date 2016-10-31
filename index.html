@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+File      : index.html
+Date      : 12 Sep 16
+Author    : Jaymes Young
+-->
+<html lang="en" ng-app="wordGenerator">
+  <head>
+    <title>Word Generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  
+  <body ng-controller="mainCtrl">
+    <header class="main-header">
+      <p class="main-header__name">Word Generator</p>
+      <nav class="main-nav">
+        <ul class="main-menu">
+          <li class="main-menu__item" ng-click="wordsType='meat'; getWords('meat');">Meat</li>
+          <li class="main-menu__item" ng-click="wordsType='doctor'; getWords('doctor');">Doctor Who</li>
+          <li class="main-menu__item" ng-click="wordsType='german'; getWords('german');">German</li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="main-content">
+      <section class="main-content__wrap" ng-switch="wordsType">
+        <meat ng-switch-when="meat"></meat>
+        <doctor ng-switch-when="doctor"></doctor>
+        <german ng-switch-when="german"></german>
+        <home ng-switch-default></home>
+      </section> 
+    </main>
+    
+    <footer class="main-footer">
+      <small>&copy; 2016 PhoenixJaymes</small>
+    </footer>
+    
+    
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>
